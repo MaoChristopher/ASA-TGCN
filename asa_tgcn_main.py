@@ -8,7 +8,7 @@ import random
 import numpy as np
 import subprocess
 
-from pytorch_transformers import BertModel, BertConfig
+from transformers import BertModel, BertConfig
 from data_utils import Tokenizer4Bert, ABSADataset
 from asa_tgcn_model import AsaTgcn
 
