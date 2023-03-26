@@ -108,7 +108,7 @@ class AsaTgcn(BertPreTrainedModel):
         return x_av
 
     def forward(self, input_ids, segment_ids, valid_ids, mem_valid_ids, dep_adj_matrix, dep_value_matrix):
-        sequence_output, pooled_output = self.bert(input_ids, segment_ids)
+        sequence_output, pooled_output = self.bert(input_ids, segment_ids, return_dict=False)
         dep_embed = self.dep_embedding(dep_value_matrix)
 
         batch_size, max_len, feat_dim = sequence_output.shape
