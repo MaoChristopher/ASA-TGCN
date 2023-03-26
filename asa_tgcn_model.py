@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import numpy as np
-from pytorch_transformers import BertPreTrainedModel,BertModel
+from transformers import BertPreTrainedModel,BertModel
 
 class GraphConvolution(nn.Module):
     """
