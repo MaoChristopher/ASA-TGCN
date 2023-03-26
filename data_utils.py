@@ -3,7 +3,7 @@ import copy
 import numpy as np
 import torch
 from torch.utils.data import Dataset
-from pytorch_transformers import BertTokenizer
+from transformers import BertTokenizer
 
 
 def pad_and_truncate(sequence, maxlen, dtype='int64', padding='post', truncating='post', value=0):
